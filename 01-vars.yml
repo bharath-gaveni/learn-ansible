@@ -29,7 +29,7 @@
   hosts: localhost
   tasks:
     - name: getting uptime of server and storing output in to out variable
-      ansible.builtin.shell: UpTime
+      ansible.builtin.shell: uptime
       register: out
     - name: printing out variable
       ansible.builtin.debug:
