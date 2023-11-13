@@ -6,6 +6,15 @@
     - name: printing url variable( declaring variable on play level)
       ansible.builtin.debug:
         msg: "{{url}}"
+- name: demo on variables but declaring now on task level
+  hosts: localhost
+  tasks:
+    - name: printing url variable but task level
+      ansible.builtin.debug:
+        vars:
+          url: Dakati.com
+          msg: "{{url}}"
+
 
 
 
