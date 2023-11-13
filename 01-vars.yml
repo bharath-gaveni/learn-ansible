@@ -1,0 +1,11 @@
+-name: Demo on Variables(declaring varibles at play level)
+hosts: localhost
+vars:
+  url: Dakati.com
+tasks:
+  -name: printing the variable url
+  msg: "{{url}}"
+
+
+
+
