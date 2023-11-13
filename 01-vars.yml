@@ -11,9 +11,10 @@
   tasks:
     - name: printing url1 variable at task level
       ansible.builtin.debug:
-        msg: "{{ url1 }}"
       vars:
         url1: Dakati.com
+        msg: "{{ url1 }}"
+
 
 
 
