@@ -9,11 +9,17 @@
 - name: demo on variables but declaring now on task level
   hosts: localhost
   tasks:
-    - name: printing url variable but task level
+    - name: printing url1 variable but task level
       ansible.builtin.debug:
         msg: "{{url1}}"
       vars:
         url1: dakati.com
+    - name: printing url2 variable task level
+      ansible.builtin.debug:
+        msg: "{{url2}}"
+      vars:
+        url2: www.dakati.com
+
 
 
 
