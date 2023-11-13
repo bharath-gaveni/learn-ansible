@@ -1,4 +1,4 @@
--name: Demo on Variables(declaring varibles at play level)
+-name: Demo on Variables
 hosts: localhost
 vars:
   url: Dakati.com
