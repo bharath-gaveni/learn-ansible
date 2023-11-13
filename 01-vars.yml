@@ -8,13 +8,16 @@
         msg: "{{ url }}"
 - name: demo on variables but at task level
   hosts: localhost
+  vars:
+    url1: Bharath.com
+    url2: Bharath.com
   tasks:
     - name: printing url1 variable at task level
       ansible.builtin.debug:
         msg: "{{ url1 }}"
       vars:
         url1: Dakati.com
-    - name: printing ur2 variable at task level
+    - name: printing url2 variable at task level
       ansible.builtin.debug:
         msg: "{{ url2 }}"
       vars:
