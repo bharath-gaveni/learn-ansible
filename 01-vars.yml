@@ -28,10 +28,10 @@
 - name: Register variable
   hosts: localhost
   tasks:
-    - name: getting uptime of system
+    - name: getting uptime of server and storing output in to out variable
       ansible.builtin.shell: uptime
-      Register: out
-    - name: storing out variable
+      register: out
+    - name: printing out variable
       ansible.builtin.debug:
         msg: "{{out}}"
 
