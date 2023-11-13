@@ -25,6 +25,16 @@
       vars:
         url2: Dakati.com
 
+- name: Register variable
+  hosts: localhost
+  tasks:
+    - name: Getting uptime of system
+      ansible.builtin.shell: uptime
+      Register: out
+    - name: storing update in out variable
+      ansible.builtin.debug:
+         msg: "{{ out }}"
+
 
 
 
