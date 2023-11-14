@@ -5,7 +5,7 @@
       ansible.builtin.debug:
         msg: fruit is {{ item }}
       loop:
-        apple
-        kiwi
-        banana
-        orange
+        - apple
+        - kiwi
+        - banana
+        - orange
