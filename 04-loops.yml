@@ -24,7 +24,21 @@
       loop: "{{fruits}}"
 
 
-
+- name: printing loops using map
+  hosts: localhost
+  vars:
+    fruits:
+      - apple
+      - banana
+      - kiwi
+  tasks:
+    - name: printing loops
+      ansible.builtin.debug:
+        msg: fruit is {{ item.name }} , {{ item.quantity}}
+      loop:
+        {name: apple , quantity: 100}
+        {name: banana , quantity: 200}
+        {name: kiwi, quantity: 300}
 
 
 
