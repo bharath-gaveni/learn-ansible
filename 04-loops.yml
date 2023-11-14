@@ -21,8 +21,8 @@
     - name: printing loop
       ansible.builtin.debug:
         msg: fruit is {{ item }}
-      loop:
-          "{{fruits}}"
+      loop: "{{fruits}}"
+
 
 
 
