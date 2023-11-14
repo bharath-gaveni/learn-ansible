@@ -26,11 +26,6 @@
 
 - name: printing loops using map
   hosts: localhost
-  vars:
-    fruits:
-      - apple
-      - banana
-      - kiwi
   tasks:
     - name: printing loops
       ansible.builtin.debug:
