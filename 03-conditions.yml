@@ -5,12 +5,13 @@
       ansible.builtin.debug:
         msg: hello linux
         when: "{{ os_name}}" ==linux
-
-
-
     - name: print unix
       ansible.builtin.debug:
         msg: hello unix
         when: "{{ os_name }}" ==unix
+
+
+
+
 
 
