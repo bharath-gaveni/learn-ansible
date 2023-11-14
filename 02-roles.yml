@@ -1,5 +1,6 @@
 - name: Demo on roles
   hosts: localhost
   roles:
-    - bharath
+    bharath
+
 
