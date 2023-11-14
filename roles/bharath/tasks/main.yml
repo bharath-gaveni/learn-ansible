@@ -1,4 +1,6 @@
 - name: printing hello statement
-  ansible.builtin.debug:
-    msg: Hello iam from Roles of bharath written in main.yml
+  hosts: localhost
+  roles:
+    ansible.builtin.debug:
+      msg: Hello iam from Roles of bharath written in main.yml
 
