@@ -10,7 +10,18 @@
         - kiwi
 
 
-
+- name: demo on loops declaring at play level
+  hosts: localhost
+  vars:
+    fruits:
+      - apple
+      - banana
+      - kiwi
+  tasks:
+    - name: printing loop
+      ansible.builtin.debug:
+        msg: fruit is {{ item }}
+      loop: "{{ fruits }}"
 
 
 
