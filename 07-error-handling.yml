@@ -1,0 +1,11 @@
+- name: Demo on error handling
+  hosts: localhost
+  tasks:
+    - name: printing the error handling
+      ansible.builtin.shell: ls
+     # ignore_errors: yes
+
+    - name: printing hello
+      ansible.builtin.debug:
+        msg: "{{hello}}"
+
